@@ -1,0 +1,501 @@
+*{
+    box-sizing: border-box;
+}
+
+html , body{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Alegreya Sans";
+        font-size: 17px;
+    
+}
+
+body h1, h2, h3, h4, h5, h6, .counter-number, 
+.post-navigation a span.post-nav-title, .special-heading 
+.special-heading-title, h2.cta-heading, #page-title h1, 
+#main-menu > ul > li a, .main-menu > ul > li > a{
+    font-family: "Alegreya";
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*start of hom/ nav section*/
+
+.home{
+    background-image: url(home.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.nav{
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+
+    animation: navBackground linear;
+    animation-timeline: scroll(root);
+    animation-range: 0 100vh;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navBackground{
+    from{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to{
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+}
+
+.logo img{
+    width: 50%;
+    animation: logoFilter linear;
+    animation-timeline: scroll(root);
+    animation-range: 0 100vh;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logoFilter{
+    from{
+        filter: brightness(0) invert(1);
+    }
+    to{
+        filter: none;
+    }
+}
+.logo{
+    float: left;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 18px 0;
+   
+}
+
+.logo a{
+    color: #ff305b;
+}
+.nav ul{
+    list-style-type: none;
+     float: right;
+}
+
+
+.nav ul  li{
+    float: left;
+    padding: 20px;
+}
+
+.nav ul li a{
+    animation: navTextColor linear;
+    animation-timeline: scroll(root);
+    animation-range: 0 100vh;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navTextColor{
+    from{
+        color: white;
+    }
+    to{
+        color: #595959;
+    }
+}
+
+.nav ul li a:hover{
+    color: #000000 !important;
+}
+a{
+    text-decoration: none;
+    color: white;
+   
+}
+
+.home-info{
+    text-align: center;
+    color: white;
+    padding-top: 250px;
+}
+
+.home-info .p{
+        line-height: 1.86em;
+        margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.home-info h1{
+    margin-bottom: 18px;
+    line-height: 1.2em;
+    font-weight: 400
+}
+
+.pp{
+    margin-top: 10px;
+    line-height: 1.86em;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+.home-btn{
+    margin-top: 40px;
+}
+
+.home-btn button{
+    font-family: "Alegreya Sans";
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 35px;
+    border-radius: 3px;
+    border-color: transparent;
+    cursor: pointer;
+    margin: 0px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-solid{
+   background-color: rgb(142, 119, 84);  /* لوني قريب من اللون البيج/التان اللي في الصورة، عدّليه لو عندك لون محدد */
+    color: white;
+    border: 2px solid #d4b483;
+}
+
+.btn-solid:hover{
+    background-color:white;
+    color: black;
+}
+
+.btn-outline{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 30%;
+}
+
+.btn-outline:hover{
+    background-color: white;
+    color: black;
+}
+
+/*about section */
+.about{
+    padding: 80px 0px;
+}
+.about-img{
+    display: inline-block;
+    width: 49%;
+    padding: 0px 20px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+
+}
+
+.about-content{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding-top:60px;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 40px;
+ 
+
+}
+
+
+.about-content h2{
+
+    
+    margin-bottom: 20px;
+    
+    font-size: 32px;
+    color: #303030;
+    line-height: 1.38em;
+    font-weight: 400;
+    
+}
+
+.about-content p{
+    line-height: 1.86em;
+    color: #686868;
+}
+
+
+.about-content ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.86em;
+    font-weight: 400;
+    color: #686868;
+        font-size: 17px;
+}
+
+.about-content ul li {
+    padding: 15px 0;
+    display: list-item;
+    unicode-bidi: isolate;
+}
+.about-content ul li img{
+   width: 25px;
+   margin-right: 10px;
+}
+
+
+/*location section*/
+
+.location{
+    padding: 80px 0px;
+    background-color: rgb(248, 248, 248);
+}
+.location-content{
+    display: inline-block;
+    width: 49%;
+        padding: 0px 10px;
+        padding-top: 100px;
+}
+
+.location-content p{
+    color:#686868;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+    line-height: 1.86em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.location-img{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding-top:60px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+
+}
+
+.location-content h2{
+        font-size: 32px;
+        font-weight: 400;
+        color: #303030;
+    line-height: 1.38em;
+
+}
+
+/* backing section*/
+
+.backing{
+    padding: 80px 0px;
+    text-align: center;
+}
+
+
+.backing .item{
+     width: 33.333%;
+    float: left;
+    padding: 0px 10px;
+}
+
+
+.clear-fix{
+    clear: both;
+}
+
+.backing-content {
+    padding-bottom: 50px;
+}
+
+.backing-content h3{
+       font-family: "Alegreya";
+       font-size: 30px;
+       font-weight: 400;
+       color: #303030;
+    line-height: 1.38em;
+}
+
+.backing-content p ,
+.item p{
+    font-size: 17px;
+    color: #888;
+    max-width: 720px;
+    margin: 17px auto 0;
+    line-height: 1.86em;
+}
+
+.item h4{
+        line-height: 1.86em;
+        font-size: 22px;
+        color: #303030;
+    line-height: 1.38em;
+    font-weight: 400;
+}
+/*contact section*/
+
+.contact{ 
+    padding: 80px 0px;
+    background-color: rgb(248, 248, 248);
+}
+
+.contact-info{
+    float: left;
+    width: 49%;
+    padding: 0px 10px;
+}
+
+.contact-info h2{
+    color: #303030;
+    line-height: 1.38em;
+    font-weight: 400;
+        margin-bottom: 25px;
+}
+
+.contact-info p{
+    line-height: 1.86em;
+    font-weight: 400;
+    color: #686868;
+    width: 100%;
+}
+
+.contact-map{
+    float: left;
+    width: 49%;
+    padding: 0px 10px;
+    padding-top: 100px;   /* عشان تبدأ من نفس مستوى بداية الكلام في contact-info */
+    box-sizing: border-box;
+}
+.contact-map{
+    float: left;
+    width: 49%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.contact-map iframe{
+    display: block;
+    border-radius: 8px;   /* لو عايزة حواف مدورة زي المرجع */
+}
+
+
+.contact-info ul li{
+    list-style-type: none;
+    border: 0;
+    padding: 15px 0;
+    padding-left: 40px;
+    font-size :17px;
+    font-weight: 400;
+    color: #686868;
+    line-height: 1.86em;
+}
+
+.contact-info ul li i{
+    width: 25px;
+    padding-right: 30px;
+}
+/*footer section*/
+.footer{
+    background-color:#1b1b1b;
+    color: #797979;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+      background-color: #403d38;
+    
+}
+
+.footer-info{
+  
+    margin-top: 20px;
+}
+
+.footer-item{
+    width: 25%;
+    float: left;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+
+
+.footer-bottom{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+    background-color: #353330;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 40px;   
+     text-align: center;
+}
+
+.bakery-footer{
+    width: 250px;
+    filter: brightness(0) invert(1);
+
+}
+
+
+.footer-bottom p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+
+.icons {
+ 
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icons img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-item h3{
+    text-transform: none;
+    font-size: 18px;
+    opacity: 1;
+    visibility: visible;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.footer-item p{
+    color: #969696;
+    font-size: 16px;
+    opacity: 1;
+    visibility: visible;
+    line-height: 1.86em;
+    margin-bottom: 20px;
+}
+
+.footer-item ul li{
+    color: #969696;
+    font-size: 16px;
+    list-style-type: none;
+    line-height: 1.86em;
+    font-weight: 400;   
+    
+}
+
+.footer-item ul li i{
+    width: 30px;
+}
