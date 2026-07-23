@@ -31,6 +31,7 @@ Client reviews section to build trust with visitors
 Social/contact icons (Email, Google, X) for quick reach-out
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🛠️ Tech Stack
+
 HTML5 — structure
 CSS3 — responsive styling
 JavaScript — interactivity
