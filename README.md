@@ -1,5 +1,5 @@
 🍞 Bakery Website
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Frontend HTML CSS JavaScript
 
 A responsive business landing page for a local bakery, built to showcase products, location, and brand story.
