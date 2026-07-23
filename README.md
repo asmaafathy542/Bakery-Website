@@ -5,7 +5,7 @@ Frontend HTML CSS JavaScript
 A responsive business landing page for a local bakery, built to showcase products, location, and brand story.
 
 🔗 Live Demo: https://asmaafathy542.github.io/Bakery-Website/
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ✨ Features Overview
 
 🏠 Home
@@ -29,11 +29,14 @@ Client reviews section to build trust with visitors
 🔗 Social & Contact
 
 Social/contact icons (Email, Google, X) for quick reach-out
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🛠️ Tech Stack
 HTML5 — structure
 CSS3 — responsive styling
 JavaScript — interactivity
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🔗 **Live Demo:** [https://asmaafathy542.github.io/Bakery-Website/](https://asmaafathy542.github.io/Bakery-Website/)
 
 ✨ Built with 🍞 by Asmaa Fathy
