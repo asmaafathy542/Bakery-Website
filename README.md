@@ -36,6 +36,4 @@ HTML5 — structure
 CSS3 — responsive styling
 JavaScript — interactivity
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-🔗 **Live Demo:** [https://asmaafathy542.github.io/Bakery-Website/](https://asmaafathy542.github.io/Bakery-Website/)
-
 ✨ Built with 🍞 by Asmaa Fathy
